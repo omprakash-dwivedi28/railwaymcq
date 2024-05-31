@@ -1,0 +1,109 @@
+.video-learner-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-learner-heading {
+  margin-bottom: 20px;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  position: relative;
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+}
+
+.video-title {
+  margin-top: 10px;
+}
+
+.watch-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.modal-video-player {
+  width: 100%;
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Datepicker Container */
+.datepicker-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Datepicker Header */
+.datepicker-header {
+  margin-bottom: 5px;
+}
+
+/* Date Input */
+.date-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Optional: Increase spacing between inputs */
+.date-box + .date-box {
+  margin-top: 10px;
+}
